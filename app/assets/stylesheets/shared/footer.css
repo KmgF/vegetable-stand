@@ -1,0 +1,26 @@
+.top-page-footer{
+  height: 300px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.foot-contents{
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: flex-start;
+  color: gainsboro;
+  text-shadow: 0 0 5px rgba(0,0,0, 0.9);
+
+}
+
+.foot-left-contents{
+
+}
+
+.service-lists{
+  list-style: none;
+}
+
+.about-campany-lists{
+  list-style: none;
+}

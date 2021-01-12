@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box
+}
+
+.top-page-header{
+  width: 100vw;
+  height: 20vh;
+  padding: 2vh 5vw;
+  flex-direction: column;
+  background-color: yellowgreen;
+}
+
+.title-contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.vege_icon{
+  width: 30vw;
+  margin: 2vw 0 0 0;
+}
+
+.serach-form{
+  width: 50vw;
+  height: 5vh;
+  display: flex;
+  margin-top: 2vh;
+}
+
+.input-box{
+  width: 50vw;
+  height: 30px;
+  background-color: lightgray
+}
+
+.serach-button{
+  width: 50px;
+  height: 30px;
+  background-color: lightskyblue;
+}
+
+.search-icon{
+  width: 50px;
+  height: 28px;
+}

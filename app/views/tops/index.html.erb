@@ -1,0 +1,25 @@
+<%= render 'shared/header'%>
+<div class="top-content">
+  <h2 class="service-title">野菜の青空マーケット<h2>
+  <p class="service-explain">本来交わらない農家と家庭を繋ぐ</p>
+  <p class="service-explain">売りやすく買いやすい、お買い物アプリ</p>
+</div>
+  
+<div class="center-content">
+<strong class="center-text">まずは、売るか、買うか選択してください</strong>
+  <div class="select-buyer-or-saller">
+    <div class="buyer-button">
+    <p class="buyer-bottun-text">野菜を買う方はこちらの</p>
+    <p class="buyer-bottun-text">画像をクリック</p>
+      <%= link_to image_tag("shopping1.png" ,class:"buyer-button-image"),"#"%>
+    </div>
+    <div class="seller-button">
+    <p class="seller-bottun-text">野菜を売る方はこちらの</p>
+    <p class="seller-bottun-text">画像をクリック</p>
+      <%= link_to image_tag("seller1.png" ,class:"seller-button-image"),"#"%>
+    </div>
+  </div>
+</div>
+
+
+<%= render 'shared/footer'%>

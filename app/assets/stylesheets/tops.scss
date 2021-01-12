@@ -1,0 +1,110 @@
+
+/*タイトル*/
+.top-content{
+  height: 100vh;
+  width: 100vw;
+  background-image: image-url('vege_tops1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+.service-title{
+  font-size: 8vh;
+}
+
+.service-explain{
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+/*買うか売るか選択するボタン*/
+.center-content{
+  height: 700px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 5vh;
+}
+
+.center-text{
+  font-size: 5vh;
+  color: silver;
+  background: linear-gradient(transparent 80% , greenyellow 0%);
+}
+
+.select-buyer-or-saller{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin: 60px 0;
+  width: 100%;
+}
+
+.buyer-button{
+  display: inline-block;
+  height: 500px;
+  width: 45vw;
+  text-align: center;
+  color:white;
+  background-color: yellowgreen;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.buyer-button:active{
+  /*ボタンを押した時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.buyer-bottun-text{
+  top: 40px;
+  left: 20px;
+  font-size: 5vh;
+}
+
+.seller-button{ 
+  display: inline-block;
+  height: 500px;
+  width: 45vw;
+  text-align: center;
+  color: yellowgreen;
+  position: relative;
+  border: solid yellowgreen;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.seller-button:active{
+  /*ボタンを押した時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+
+.seller-bottun-text{
+  top: 40px;
+  left: 20px;
+  font-size: 5vh;
+}
+
+.buyer-button-image{
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+
+.seller-button-image{
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  }
