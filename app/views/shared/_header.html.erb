@@ -1,6 +1,8 @@
 <header class='top-page-header'>
   <div class="title-contents">
     <%= link_to image_tag("vege_title_logo1.png",class:"vege_icon"),"/"%>
+    <%= link_to '新規登録', new_user_registration_path %>
+    <%=link_to'ログアウト',destroy_user_session_path ,method: :delete %>
     <form class="serach-form"  action="#">
       <input class="input-box" placeholder="野菜名・生産者の名前・キーワードで検索">
       <button class="serach-button">
