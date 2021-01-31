@@ -1,0 +1,78 @@
+
+.registration-main{
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.top-text{
+  font-size: medium;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10vh;
+  color: #708090;
+}
+
+.form-category{
+  width: 70vw;
+  margin: 0 auto 10vh;
+  background-color:  #f5f5f5;
+  color: #708090;
+  font-weight: bold;
+}
+
+.form-wrap{
+  background-color: white;
+  height: 20vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.form-text-wrap{
+  color: black;
+  font-weight: normal;
+}
+
+.form-text-mark{
+  background-color: red;
+  color: white;
+  font-size: 15px;
+}
+.field{
+  text-align: left;
+  margin: 0vh 3vw;
+  font-weight: normal;
+}
+
+.field-email{
+  text-align: left;
+  font-weight: normal;
+  width: 40vw;
+}
+
+.registration-actions{
+  text-align: center;
+}
+
+.registration-action-btn{
+    display       : inline-block;
+    border-radius : 20%;          /* 角丸       */
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 46px;   /* 余白       */
+    background    : green;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 6px #666666;  /* 影の設定 */
+    border        : 2px solid #003300;    /* 枠の指定 */
+  }
+
+.registration-action-btn:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #003300;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+}
