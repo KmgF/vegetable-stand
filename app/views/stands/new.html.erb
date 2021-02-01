@@ -1,0 +1,31 @@
+<%= render 'devise/shared/header'%>
+<div class="new_stand_pagewrap">
+  <div class="new_stand_title">
+    <p class="title_text">新しいショップを作る</p>
+  </div>
+  <div class="new_stand_inputs">
+    <%= form_with model: @stand, local: true do |f|%>
+    <div class="form_wrap">
+      <label class="form_text">ショップの名前</label>
+      <p class="form_description">必要ない場合は空欄のままにしてください</p>
+      <div class="form_input">
+      <%= f.text_field :name ,id: 'name-input',class: 'name_input',placeholder:'例)太郎の野菜ショップ' %>
+      </div>
+    </div>
+    <div class="form_wrap">
+      <span class="form-text-mark">必須</span>
+      <label class="form_text">販売場所</label>
+      <p class="form_description">マップで場所が表示されます。都道府県、市町村区、番地まで正確に記載してください</p>
+      <div class="form_input">
+      <%= f.text_field :street_address, id:'steet_address_input',class:'address_input',placeholder:"例)東京都千代田区丸の内１丁目"%>
+      </div>
+    </div>
+
+    <div class="new_stand_action">
+      <%=f.submit "ショップを作る",class:"new_stand_action_btn"%>
+    </div>
+
+
+  <% end %>
+  </div>
+</div>
