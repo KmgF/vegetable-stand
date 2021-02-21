@@ -1,0 +1,116 @@
+.standshow_pagewrap{
+  width: 100%;
+  height: 300vh;
+  background-color: yellowgreen;
+}
+
+.standshow_top_contents{
+  width: 90vw;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.standshow_title{
+  color: #008b8b;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.standshow_description{
+  font-weight: bolder;
+}
+
+.standshow_body{
+  padding-top: 5vh;
+  width: 90vw;
+  height: 200vh;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.vegetable-new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.vegetable-new-link,.stand-edit-btn{
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  margin-right: 1vw;
+}
+
+.vegetable-new-link{
+  background-color: lightcoral;
+}
+.stand-edit-btn{
+  background-color: coral;
+}
+
+.vegetable-new-link,.vegetable-new-link:visited,.vegetable-new-link:link{
+  text-decoration: none;
+  color: white;
+}
+
+.standshow-contents-title{
+  color: #008b8b;
+  font-weight: bold;
+  font-size: large;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+
+.vegetables-index{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.vegetable{
+  width: calc((90vw - 6vw) /3 );
+  height: 50vh;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.vegetable-icon{
+  width: 15vw;
+  height: 15vw;
+  margin: 0 auto;
+}
+
+.vege-menu-btn-show{
+  display: inline-block;
+  margin: 1vh 0;
+  padding: 5px;
+  text-decoration: none;
+  background-color:#f4a460;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.standshow_vegetable_table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.detail-item{
+  border: #dcdcdc solid 1px;
+  background-color:lavender;
+  width: 10vw;
+}
+
+
+.detail-value{
+  border: #dcdcdc solid 1px;
+  width: 10vw;
+}

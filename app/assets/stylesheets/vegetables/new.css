@@ -1,0 +1,120 @@
+.newvege-pagewrap{
+  width: 100%;
+  min-width: 450px;
+  height: 1000%;
+  background-color: #f5f5f5;
+}
+
+.newvege-top-contents{
+  width: 70vw;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 5vw 0;
+}
+
+.newvege-title{
+  color: #008b8b;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.newvege-title-text{
+  font-size: small;
+  color: black;
+}
+
+.newvege-body{
+  height: 200%;
+}
+
+.newvege-form{
+  width: 70vw;
+  background-color: white;
+  margin: 0 auto;
+}
+
+
+.form-wrap-large{
+  height: 50vh;
+  margin-bottom: 3vh;
+}
+
+.form-wrap-small{
+  height: 20vh;
+  margin-bottom: 3vh;
+}
+
+.form-text{
+  font-weight: bold;
+}
+
+.form-description{
+  font-size: small;
+}
+
+.select-box{
+  width: 15vw;
+}
+
+.name-input,.amont-input{
+  width: 30vw;
+}
+.message-input,.quality-input, .notice-input{
+  width: 50vw;
+  height: 30vh;
+}
+
+.price-input{
+  width: 20vw
+}
+
+.price-contents{
+  display: flex;
+  justify-content: space-between;
+  border-bottom:#696969 solid 1px;
+  width: 35vw;
+  text-align: right;
+}
+
+.price-unit{
+  margin-right: 0;
+}
+
+.price-input{
+  margin-right: 0;
+}
+
+.notice-input,.quality-input{
+  resize: none;
+}
+
+.image-photo{
+  display: block;
+  margin-bottom: 3vh;
+}
+
+.new_vege_action{
+  text-align: center;
+}
+
+.new_vege_action_btn{
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 46px;   /* 余白       */
+  background    : #008b8b;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 6px #666666;  /* 影の設定 */
+  border        : 2px solid #003300;    /* 枠の指定 */
+}
+
+.new_vege_action_btn:hover{
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #003300;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+  }

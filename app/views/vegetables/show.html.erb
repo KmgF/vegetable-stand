@@ -1,0 +1,49 @@
+<%= render 'shared/header'%>
+<div class="vege-show-pagewrap">
+  <div class="vege-show-topcontents">
+    <h2 class="top-title"><%= @vegetable.category%></h2>
+    <%= image_tag(@vegetable.image.variant(resize: '400x400'),class:"vege-image")%>
+  </div>
+  <div class="vege-show-bodycontents">
+    <% if @vegetable.user_id == current_user.id%>
+    <div class="menu-icon">
+      <%= link_to '編集',edit_stand_vegetable_path(@vegetable.id),method: :get,class:"vege-menu-edit"%>
+      <%= link_to '削除',stand_vegetable_path(@vegetable.id), method: :delete, class:"vege-menu-delete"%>
+    </div>
+    <% else %>
+      <%= link_to '購入する', '#', class:"vege-menu-buy"%>
+    <% end %>
+    <table class="detail-table">
+      <tr>
+        <td class="detail-item">価格</td>
+        <td class="detail-value"><%=@vegetable.price%><span>円</span></td>
+      </tr>
+      <tr>
+        <td class="detail-item">商品PR</td>
+        <td class="detail-value"><%=@vegetable.message%></td>
+      </tr>
+      <tr>
+        <td class="detail-item">配送サービスの有無</td>
+        <td class="detail-value"><%= @vegetable.shipment_service.name%></td>
+      </tr>
+      <% if @vegetable.shipment_service_id == 3%>
+      <tr>
+        <td class="detail-item">配送料の負担</td>
+        <td class="detail-value"><%=@vegetable.delivery_fee.name%></td>
+      </tr>
+      <% end %>
+      <tr>
+        <td class="detail-item">品質についての注意事項</td>
+        <td class="detail-value"><%= @vegetable.quality_description%></td>
+      </tr>
+      <tr>
+        <td class="detail-item">注文に際しての注意事項</td>
+        <td class="detail-value"><%=@vegetable.important_notice%></td>
+      </tr>
+    </table>
+    <div class="shop-link">
+      <%= link_to 'ショップページへ戻る',stand_path(@vegetable.stand.id),class:"shop_link_btn"%>
+    </div>
+  </div>
+</div>
+<%= render 'shared/footer'%>

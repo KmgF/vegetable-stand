@@ -1,7 +1,8 @@
 <%= render 'devise/shared/header'%>
-<div class="new_stand_pagewrap">
+<div class="edit_stand_pagewrap">
   <div class="new_stand_title">
-    <p class="title_text">新しいショップを作る</p>
+    <p class="title_text">ショップを編集する</p>
+    <p>下部のボタンでショップの削除もできます</p>
   </div>
   <div class="new_stand_inputs">
     <%= form_with model: @stand, local: true do |f|%>
@@ -34,10 +35,15 @@
     </div>
 
     <div class="new_stand_action">
-      <%=f.submit "ショップを作る",class:"new_stand_action_btn"%>
+      <%=f.submit "ショップを編集する",class:"new_stand_action_btn"%>
     </div>
 
 
   <% end %>
   </div>
+
+    <div class="delete-btn">
+    <%=link_to 'ショップを削除する',stand_path(@stand.id),method: :delete,class:"stand-delete-link"%>
+  </div>
+
 </div>
