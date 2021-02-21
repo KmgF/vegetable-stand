@@ -13,10 +13,6 @@
   margin-bottom: 10vh;
 }
 
-.title_text{
-  color: #008b8b;
-}
-
 .new_stand_inputs{
   width: 70vw;
   height: 80vh;
@@ -48,7 +44,7 @@
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 12px 46px;   /* 余白       */
-  background    : #008b8b;     /* 背景色     */
+  background    : green;     /* 背景色     */
   color         : #ffffff;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
   transition    : .3s;         /* なめらか変化 */

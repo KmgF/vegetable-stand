@@ -6,24 +6,12 @@
   <div class="new_stand_inputs">
     <%= form_with model: @stand, local: true do |f|%>
     <div class="form_wrap">
-    <%= render 'shared/error_messages', model: f.object %>
-
-      <span class="form-text-mark">必須</span>
       <label class="form_text">ショップの名前</label>
-      <p class="form_description">管理するのにわかりやすい名前をつけましょう</p>
+      <p class="form_description">必要ない場合は空欄のままにしてください</p>
       <div class="form_input">
-      <%= f.text_field :name, id: 'name-input',class: 'name_input',placeholder:'例)太郎の野菜ショップ' %>
+      <%= f.text_field :name ,id: 'name-input',class: 'name_input',placeholder:'例)太郎の野菜ショップ' %>
       </div>
     </div>
-
-    <div class="form_wrap">
-      <label class="form_text">ショップのイメージ画像</label>
-      <p class="form_description">お店の写真を貼りましょう  写真がない場合はデフォルトのイラストが表示されます</p>
-      <div class="form_input">
-        <%= f.file_field :image, id:'stand-image-input',class: 'stand_image_input'%>
-      </div>
-    </div>
-
     <div class="form_wrap">
       <span class="form-text-mark">必須</span>
       <label class="form_text">販売場所</label>

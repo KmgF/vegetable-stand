@@ -46,6 +46,7 @@
 |amount              | integer | null false|
 |important_notice    | text    |
 |message             | text    |
+|sale_or_soldout     | integer |
 
 ## Association
 belongs_to :user

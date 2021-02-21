@@ -16,11 +16,7 @@
     <div class="seller-button">
     <p class="seller-bottun-text">野菜を売る方はこちらの</p>
     <p class="seller-bottun-text">画像をクリック</p>
-     <% if user_signed_in? %>
-      <%= link_to image_tag("seller1.png" ,class:"seller-button-image"), user_path(current_user.id) %>
-     <% else %>
-     <%= link_to image_tag("seller1.png", class:"seller-button-image"), new_user_session_path %>
-     <% end %>
+      <%= link_to image_tag("seller1.png" ,class:"seller-button-image"),"#"%>
     </div>
   </div>
 </div>
