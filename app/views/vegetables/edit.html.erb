@@ -1,0 +1,123 @@
+<%= render 'devise/shared/header'%>
+<div class="vege-edit-pagewrap">
+  <div class="vege-edit-contents">
+    <div class="top-title">
+    <h2 class="vege-edit-title">商品の情報編集</h2>
+    </div>
+    <%= form_with(model:[ @stand,@vegetable],class:'vege-form', local: true) do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="form-wrap-small">
+      <div class="form-label">
+      <span class="form-text-mark">必須</span>
+        <label class="form-text">野菜の種類名</label>
+        <p class="form-description">種類名、品種名を入力してください</p>
+        <div class="form-input">
+          <%= f.text_field :category, class:"name-input",placeholder:'例)京なす、シャインマスカット'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrap-small">
+      <div class="form-label">
+      <span class="form-text-mark">必須</span>
+        <label class="form-text">野菜の写真</label>
+        <p class="form-description">野菜の写真を添付しましょう</p>
+        <div class="form-input">
+          <%= f.file_field :image, id:'vege-image-input',class: 'vege_image'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrap-small">
+      <div class="form-label">
+      <span class="form-text-mark">必須</span>
+        <label class="form-text">容量</label>
+        <p class="form-description">１袋あたりどのくらいの量(重さや個数)入っているか入力してください</p>
+        <div class="form-input">
+          <%= f.text_field :amount, class:"amont-input",placeholder:'例)100g、1kg'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrap-large">
+      <div class="form-label">
+        <span class="form-text-mark">必須</span>
+        <label class="form-text">価格(¥50円〜999,999)</label>
+        <p class="form-description">半角数字で入力してください</p>
+      </div>
+      <div class="price-contents">
+          <span class="price-label">価格</span><%= f.text_field :price, class:"price-input",placeholder:'例) 500 '%><span class="price-unit">円</span>
+      </div>
+      <div class="price-contents">
+          <span class="price-label">手数料(価格の10%)</span>
+          <span class="price-unit">円</span>
+      </div>
+      <div class="price-contents">
+          <span class="price-label">販売利益</span>
+          <span class="price-unit">円</span>
+      </div>
+    </div>
+
+    <div class="form-wrap-large">
+      <div class="form-label">
+        <span class="form-text-mark">必須</span>
+        <label class="form-text">商品についてのアピールポイント</label>
+        <p class="form-description">どんな商品なのか、こだわりや生産方法などを記入しましょう</p>
+        <div class="form-input">
+          <%= f.text_area :message, class:"message-input",placeholder:'例)有機栽培で安全性の高い野菜です。なるべく機械に頼らず手間隙かけて育てました。今年は豊作で自信作です！是非一度、御賞味ください！'%>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-wrap-small">
+        <span class="form-text-mark">必須</span>
+        <label class="form-text">配送サービスの有無</label>
+        <p class="form-description">野菜を配送できるかどうか設定してください</p>
+      <div class="form-input">
+        <%= f.collection_select(:shipment_service_id, ShipmentService.all,:id ,:name ,{}, {class:'select-box',id:"vege-shipment"})%>
+      </div>
+    </div>
+
+    <div class="form-wrap-small">
+        <label class="form-text">配送料の負担</label>
+        <p class="form-description">配送可能の場合、配送料は売主負担か購入者負担か選択してください</p>
+      <div class="form-input">
+        <%= f.collection_select(:delivery_fee_id, DeliveryFee.all,:id ,:name ,{}, {class:'select-box',id:"vege-shipment_fee"})%>
+      </div>
+    </div>
+
+    <div class="form-wrap-large">
+      <div class="form-label">
+        <label class="form-text">品質についての注意事項</label>
+        <p class="form-description">大きさや形について詳しい説明が必要な場合は下記へ記入してください</p>
+        <div class="form-input">
+          <%= f.text_area :quality_description, class:"quality-input",placeholder:'例)茶色い斑点が付いていることがございますが品質に問題はございません。収穫した日にお渡しまたは配送しますので新鮮なものです。'%>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-wrap-large">
+      <div class="form-label">
+        <label class="form-text">注文に際しての注意点</label>
+        <p class="form-description">納期指定、受取日指定など</p>
+        <div class="form-input">
+          <%= f.text_area :important_notice, class:"notice-input",placeholder:'例)郵送の場合納期は１週間前後となります'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="new_vege_action">
+      <%=f.submit "更新する",class:"new_vege_action_btn"%>
+    </div>
+    
+      
+        </div>
+      </div>
+    </div>
+
+    <% end %>
+
+  </div>
+  </div>
+</div>

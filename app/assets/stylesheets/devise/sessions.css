@@ -1,54 +1,42 @@
-.new_stand_pagewrap{
+.session_page_wrap{
   width: 100%;
-  min-width: 800px;
   height: 100%;
   background-color: #f5f5f5;
 }
 
-.new_stand_title{
-  font-size: medium;
+.session_top{
+  width: 100%;
   text-align: center;
-  font-weight: bold;
   color: #708090;
+  background-color: #f5f5f5;
   margin-bottom: 10vh;
 }
 
-.title_text{
-  color: #008b8b;
-}
-
-.new_stand_inputs{
-  width: 70vw;
+.session_input{
+  width: 70%;
   height: 80vh;
-  background-color: white;
   margin: 0 auto;
+  background-color: white;
+  text-align: center;
 }
 
-.form_wrap{
-  margin:2vw;
-  padding-top:2vw ;
+.field{
+  padding: 2vw;
+  margin:0 0 5vh 20vw;
 }
 
-.form_description{
-  font-size: small;
-}
-
-.address_input{
+.session_field{
   width: 30vw;
 }
 
-.new_stand_action{
- text-align: center;
-}
-
-.new_stand_action_btn{
+.session_actions_btn{
   display       : inline-block;
   border-radius : 20%;          /* 角丸       */
   font-size     : 18pt;        /* 文字サイズ */
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 12px 46px;   /* 余白       */
-  background    : #008b8b;     /* 背景色     */
+  background    : green;     /* 背景色     */
   color         : #ffffff;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
   transition    : .3s;         /* なめらか変化 */
@@ -56,8 +44,8 @@
   border        : 2px solid #003300;    /* 枠の指定 */
 }
 
-.new_stand_action_btn:hover{
-box-shadow    : none;        /* カーソル時の影消去 */
-color         : #003300;     /* 背景色     */
-background    : #ffffff;     /* 文字色     */
-}
+.session_actions_btn:hover{
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #003300;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+  }

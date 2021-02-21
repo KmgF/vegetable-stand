@@ -4,7 +4,7 @@
 
 .top-page-header{
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   padding: 2vh 5vw;
   flex-direction: column;
   background-color: yellowgreen;
@@ -17,12 +17,72 @@
   position: relative;
 }
 
+
 .vege_icon{
   width: 30vw;
   margin: 2vw 0 0 0;
 }
 
+.user_menues{
+  display: flex;
+  width: 40vw;
+}
+
+.user_menu_sign_up,.user_menu_sign_out,.user_menu_mypage,.user_menu_sign_in{
+  padding: 1vh 1vw;
+  width: 12vw;
+  text-align: center;
+  margin-right:2vw;
+  list-style: none;
+  border: solid 2px white;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.user_menu_sign_up{
+  background-color: #ffa07a;
+}
+
+.user_menu_sign_in{
+  background-color: #4169e1;
+}
+
+.user_menu_sign_out{
+  background-color: #696969;
+}
+
+.user_menu_mypage{
+  background-color: #c71585;
+}
+
+
+.sign_up_link,.sign_out_link,.mypage_link,.sign_in_link{
+  text-decoration: none;
+}
+
+.sign_up_link:visited,.sign_out_link:visited,.mypage_link:visited,.sign_in_link:visited{
+  color: white;
+}
+
+.sign_up_link:link,.sign_out_link:link,.mypage_link:link,.sign_in_link:link{
+  color: white;
+}
+
+.sign_out_link{
+  text-decoration: none;
+}
+
+.sign_out_link:visited{
+  color: white;
+}
+
+
+.search{
+  margin-bottom: 10vh;
+}
+
 .serach-form{
+  margin-left: 0;
   width: 50vw;
   height: 5vh;
   display: flex;
